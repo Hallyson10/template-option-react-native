@@ -6,7 +6,11 @@ const StackOnboarding = createNativeStackNavigator();
 export default function Routes() {
   return (
     <StackOnboarding.Navigator>
-      <StackOnboarding.Screen name={'LoaderScreen'} component={LoaderScreen} />
+      <StackOnboarding.Screen
+        options={{headerShown: false}}
+        name={'LoaderScreen'}
+        component={LoaderScreen}
+      />
     </StackOnboarding.Navigator>
   );
 }
