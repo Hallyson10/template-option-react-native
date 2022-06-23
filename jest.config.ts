@@ -6,7 +6,11 @@
 export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
-
+  moduleNameMapper: {
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/assetsTransformer.js',
+    '\\.(css|less)$': '<rootDir>/assetsTransformer.js',
+  },
   // Stop running tests after `n` failures
   // bail: 0,
 
@@ -71,20 +75,18 @@ export default {
   // maxWorkers: "50%",
 
   // An array of directory names to be searched recursively up from the requiring module's location
-  // moduleDirectories: [
-  //   "node_modules"
-  // ],
+  // moduleDirectories: ['node_modules'],
 
   // An array of file extensions your modules use
   // moduleFileExtensions: [
-  //   "js",
-  //   "mjs",
-  //   "cjs",
-  //   "jsx",
-  //   "ts",
-  //   "tsx",
-  //   "json",
-  //   "node"
+  //   'js',
+  //   'mjs',
+  //   'cjs',
+  //   'jsx',
+  //   'ts',
+  //   'tsx',
+  //   'json',
+  //   'node',
   // ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module

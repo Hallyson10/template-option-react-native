@@ -1,6 +1,6 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {Text, View} from 'react-native';
-
+import ModuleOnBoarding from './modules/on-boarding/routes';
 const App = () => {
   // const isDarkMode = useColorScheme() === 'dark';
 
@@ -9,9 +9,9 @@ const App = () => {
   // };
 
   return (
-    <View>
-      <Text>ola mundo</Text>
-    </View>
+    <NavigationContainer>
+      <ModuleOnBoarding />
+    </NavigationContainer>
   );
 };
 
